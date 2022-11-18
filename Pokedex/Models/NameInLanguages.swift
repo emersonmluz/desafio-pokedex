@@ -9,7 +9,7 @@ import Foundation
 
 struct NameInLanguages: Codable {
     var english: String
-    var jananese: String
+    var japanese: String
     var chinese: String
     var french: String
 }

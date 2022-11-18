@@ -22,8 +22,8 @@ class ViewController: UIViewController {
             for pokemon in pokedex {
                 print (pokemon)
             }
-        } catch {
-            print ("Error")
+        } catch let error {
+            print (error)
         }
         
         // Do any additional setup after loading the view.
