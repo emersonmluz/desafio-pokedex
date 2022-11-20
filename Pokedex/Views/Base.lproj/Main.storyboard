@@ -15,6 +15,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6r5-v0-x0Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5tz-xo-SBl"/>
@@ -27,7 +32,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainStoryboard" id="BYZ-38-t0r" customClass="MainViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" id="BYZ-38-t0r" customClass="MainViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +116,7 @@
                                             <outlet property="pokemonNameLabel" destination="fIs-BT-GQu" id="0e9-9u-z5g"/>
                                             <outlet property="pokemonTypePrimaryLabel" destination="MAP-tm-WPO" id="UH7-ex-xeF"/>
                                             <outlet property="pokemonTypeSecondaryLabel" destination="0os-BU-4hd" id="XkE-Fr-Eka"/>
+                                            <segue destination="OWr-1u-ya0" kind="show" id="H5c-eY-bWo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -133,6 +139,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-343.125" y="7.394366197183099"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Mbw-CX-C1v">
+            <objects>
+                <viewController storyboardIdentifier="DetailsView" id="OWr-1u-ya0" customClass="DetailsViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wh4-pH-NeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aZv-CT-WqW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V3Y-z7-5hC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lE3-zS-vnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="7"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Pokédex"
+        
         pokedex = JsonFileRead.read()
         tableView.dataSource = self
         tableView.delegate = self
