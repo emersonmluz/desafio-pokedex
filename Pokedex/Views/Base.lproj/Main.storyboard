@@ -13,13 +13,15 @@
             <objects>
                 <navigationController id="2md-Ss-i3L" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6r5-v0-x0Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -31,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="-1431" y="8"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Pokédex-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainView" id="BYZ-38-t0r" customClass="MainViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-vI-55R">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="IdZ-En-0O9" userLabel="Cell" customClass="CellSetupController" customModule="Pokedex" customModuleProvider="target">
@@ -133,7 +135,9 @@
                             <constraint firstItem="yl6-vI-55R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xcm-v4-kOC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fst-Zg-SH2"/>
+                    <navigationItem key="navigationItem" title="Pokédex" largeTitleDisplayMode="always" id="fst-Zg-SH2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="clI-LK-W95"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="yl6-vI-55R" id="uaV-qo-VsP"/>
                     </connections>
@@ -152,7 +156,7 @@
                         <viewLayoutGuide key="safeArea" id="aZv-CT-WqW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="V3Y-z7-5hC"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V3Y-z7-5hC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE3-zS-vnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
