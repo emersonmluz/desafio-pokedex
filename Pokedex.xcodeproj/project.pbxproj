@@ -99,7 +99,6 @@
 				EE4588A82927EDA9006218E1 /* NameInLanguages.swift */,
 				EE4588AA2927EFA2006218E1 /* Base.swift */,
 				EE4588AD2928004C006218E1 /* JsonFileRead.swift */,
-				EE4588AF29280701006218E1 /* CellSetup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +114,7 @@
 		EE4588A32927EBEB006218E1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EE4588AF29280701006218E1 /* CellSetup.swift */,
 				C1F4DDB82927CCDA009B263A /* ViewController.swift */,
 			);
 			path = Controllers;

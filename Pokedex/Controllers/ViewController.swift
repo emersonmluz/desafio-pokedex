@@ -31,7 +31,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetup
         
-        cell.importPokemonBase(pokedex[indexPath.row], indexPath)
+        cell.importPokemonBase(pokemonBase: pokedex[indexPath.row], toLine: indexPath)
         
         return cell
     }
