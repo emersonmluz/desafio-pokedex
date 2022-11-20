@@ -20,6 +20,8 @@
 		EE4588AB2927EFA3006218E1 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588AA2927EFA2006218E1 /* Base.swift */; };
 		EE4588AE2928004C006218E1 /* JsonFileRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588AD2928004C006218E1 /* JsonFileRead.swift */; };
 		EE4588B029280701006218E1 /* CellSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588AF29280701006218E1 /* CellSetupController.swift */; };
+		EE4588B6292A76F1006218E1 /* DetatilsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4588B5292A76F1006218E1 /* DetatilsStoryboard.storyboard */; };
+		EE4588B8292A7701006218E1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588B7292A7701006218E1 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		EE4588AA2927EFA2006218E1 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		EE4588AD2928004C006218E1 /* JsonFileRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileRead.swift; sourceTree = "<group>"; };
 		EE4588AF29280701006218E1 /* CellSetupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupController.swift; sourceTree = "<group>"; };
+		EE4588B5292A76F1006218E1 /* DetatilsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetatilsStoryboard.storyboard; sourceTree = "<group>"; };
+		EE4588B7292A7701006218E1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C1F4DDBA2927CCDA009B263A /* Main.storyboard */,
+				EE4588B5292A76F1006218E1 /* DetatilsStoryboard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				EE4588AF29280701006218E1 /* CellSetupController.swift */,
 				C1F4DDB82927CCDA009B263A /* MainViewController.swift */,
+				EE4588B7292A7701006218E1 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 				C1F4DDCC2927CD56009B263A /* README.md in Resources */,
 				C1F4DDBE2927CCDC009B263A /* Assets.xcassets in Resources */,
 				C1F4DDBC2927CCDA009B263A /* Main.storyboard in Resources */,
+				EE4588B6292A76F1006218E1 /* DetatilsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +202,7 @@
 			files = (
 				EE4588A72927ECE7006218E1 /* Pokemon.swift in Sources */,
 				EE4588AE2928004C006218E1 /* JsonFileRead.swift in Sources */,
+				EE4588B8292A7701006218E1 /* DetailsViewController.swift in Sources */,
 				EE4588A92927EDA9006218E1 /* NameInLanguages.swift in Sources */,
 				EE4588B029280701006218E1 /* CellSetupController.swift in Sources */,
 				C1F4DDB92927CCDA009B263A /* MainViewController.swift in Sources */,
