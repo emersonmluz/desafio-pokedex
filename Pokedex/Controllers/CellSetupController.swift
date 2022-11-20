@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CellSetup: UITableViewCell {
+class CellSetupController: UITableViewCell {
     
     @IBOutlet weak var pokemonImageView: UIImageView!
     
