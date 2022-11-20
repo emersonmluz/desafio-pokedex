@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         pokedex = JsonFileRead.read()
         tableView.dataSource = self
+        tableView.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -35,6 +36,10 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
