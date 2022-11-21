@@ -45,6 +45,7 @@ extension MainViewController: UITableViewDelegate {
         let detailsScreen = storyboard!.instantiateViewController(withIdentifier: "DetailsView") as! DetailsViewController
         
         detailsScreen.pokemon = pokedex[indexPath.row]
+        detailsScreen.pokemonImageName = String(format: "%03d", indexPath.row + 1)
         
         self.navigationController!.pushViewController(detailsScreen, animated: true)
     }
