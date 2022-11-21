@@ -201,10 +201,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NM0-Sg-KjP" userLabel="BottonView">
                                         <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W06-mo-Mng">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W06-mo-Mng" userLabel="StatusStackView">
                                                 <rect key="frame" x="10" y="50" width="300" height="224"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-Av-K5D">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-Av-K5D" userLabel="HealthView">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="56"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-R3-Vn7">
@@ -237,7 +237,7 @@
                                                             <constraint firstItem="ocy-6U-pce" firstAttribute="centerY" secondItem="bNA-Av-K5D" secondAttribute="centerY" id="xmQ-Ae-LN8"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBW-6k-cbo">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBW-6k-cbo" userLabel="AttackView">
                                                         <rect key="frame" x="0.0" y="56" width="300" height="56"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attack" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-KC-eKQ">
@@ -270,7 +270,7 @@
                                                             <constraint firstItem="q7z-ed-7oZ" firstAttribute="centerY" secondItem="sBW-6k-cbo" secondAttribute="centerY" id="s22-yO-fdv"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrB-26-lTJ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrB-26-lTJ" userLabel="DefenseView">
                                                         <rect key="frame" x="0.0" y="112" width="300" height="56"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defense" translatesAutoresizingMaskIntoConstraints="NO" id="xLA-so-daO">
@@ -303,7 +303,7 @@
                                                             <constraint firstItem="xLA-so-daO" firstAttribute="centerY" secondItem="YrB-26-lTJ" secondAttribute="centerY" id="xgw-5M-loR"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGZ-eW-UCh">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGZ-eW-UCh" userLabel="SpeedView">
                                                         <rect key="frame" x="0.0" y="168" width="300" height="56"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speed" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-L1-xJL">
@@ -377,6 +377,10 @@
                         <outlet property="pokemonTypePrimaryLabel" destination="M8p-Sf-L8T" id="XDA-RK-hoT"/>
                         <outlet property="pokemonTypeSecondaryLabel" destination="Him-hi-VRD" id="XSR-xJ-7ch"/>
                         <outlet property="topView" destination="DE6-5S-MXh" id="LNO-F9-6rn"/>
+                        <outletCollection property="statusValues" destination="YaF-zi-Fhf" collectionClass="NSMutableArray" id="QOd-4y-z7M"/>
+                        <outletCollection property="statusValues" destination="9Z0-ud-vYj" collectionClass="NSMutableArray" id="Gb5-9o-ski"/>
+                        <outletCollection property="statusValues" destination="Dz5-e5-rTD" collectionClass="NSMutableArray" id="2A0-zR-qRO"/>
+                        <outletCollection property="statusValues" destination="Sh9-SO-ShZ" collectionClass="NSMutableArray" id="2pL-he-vyX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE3-zS-vnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

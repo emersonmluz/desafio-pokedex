@@ -15,6 +15,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var pokemonNameLabel: UILabel!
     @IBOutlet weak var pokemonTypePrimaryLabel: UILabel!
     @IBOutlet weak var pokemonTypeSecondaryLabel: UILabel!
+    @IBOutlet var statusValues: [UILabel]!
     
     var pokemon: Pokemon?
     var pokemonImageName: String?
@@ -42,6 +43,11 @@ class DetailsViewController: UIViewController {
         } else {
             pokemonTypeSecondaryLabel.isHidden = true
         }
+        
+        statusValues[0].text = String(pokemon?.base.hp ?? 0)
+        statusValues[1].text = String(pokemon?.base.attack ?? 0)
+        statusValues[2].text = String(pokemon?.base.defense ?? 0)
+        statusValues[3].text = String(pokemon?.base.speed ?? 0)
     }
 
 }
