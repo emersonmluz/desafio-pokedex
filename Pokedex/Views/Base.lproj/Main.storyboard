@@ -364,10 +364,10 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2yv-bK-z1k">
-                                <rect key="frame" x="70" y="194" width="180" height="180"/>
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2yv-bK-z1k" secondAttribute="height" multiplier="1:1" id="HrJ-yU-OY7"/>
-                                    <constraint firstAttribute="width" constant="180" id="K73-3Z-o9t"/>
+                                    <constraint firstAttribute="width" constant="200" id="K73-3Z-o9t"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -375,13 +375,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aZv-CT-WqW" firstAttribute="trailing" secondItem="Lke-rP-KPW" secondAttribute="trailing" id="HHT-nh-R8v"/>
-                            <constraint firstItem="OWI-kN-PH9" firstAttribute="leading" secondItem="aZv-CT-WqW" secondAttribute="leading" id="HQl-R9-qgf"/>
                             <constraint firstItem="2yv-bK-z1k" firstAttribute="centerX" secondItem="wh4-pH-NeE" secondAttribute="centerX" id="LBF-kT-Rtp"/>
                             <constraint firstItem="Lke-rP-KPW" firstAttribute="top" secondItem="aZv-CT-WqW" secondAttribute="top" id="LZe-FP-NF0"/>
                             <constraint firstItem="Lke-rP-KPW" firstAttribute="leading" secondItem="aZv-CT-WqW" secondAttribute="leading" id="P1j-CZ-Lag"/>
+                            <constraint firstItem="OWI-kN-PH9" firstAttribute="leading" secondItem="wh4-pH-NeE" secondAttribute="leading" id="ZZt-IN-p1e"/>
                             <constraint firstItem="OWI-kN-PH9" firstAttribute="top" secondItem="wh4-pH-NeE" secondAttribute="top" id="bh9-fg-4PD"/>
                             <constraint firstItem="2yv-bK-z1k" firstAttribute="centerY" secondItem="wh4-pH-NeE" secondAttribute="centerY" id="eN1-ot-exp"/>
-                            <constraint firstItem="OWI-kN-PH9" firstAttribute="trailing" secondItem="aZv-CT-WqW" secondAttribute="trailing" id="qd9-4N-8yS"/>
+                            <constraint firstAttribute="trailing" secondItem="OWI-kN-PH9" secondAttribute="trailing" id="qcq-Bp-uyO"/>
                             <constraint firstAttribute="bottom" secondItem="Lke-rP-KPW" secondAttribute="bottom" id="qmY-cF-fF0"/>
                             <constraint firstAttribute="bottom" secondItem="OWI-kN-PH9" secondAttribute="bottom" id="tLP-Su-KKE"/>
                         </constraints>
