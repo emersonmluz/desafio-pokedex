@@ -20,7 +20,7 @@ class CellSetupController: UITableViewCell {
     
     @IBOutlet weak var cellContentView: UIView!
     
-    func importPokemonBase (pokemonBase pokemon: Pokemon, toLine index: IndexPath) {
+    func importPokemonBase (pokemonBase pokemon: Pokemon) {
         
         cellContentView.layer.cornerRadius = 5
         pokemonTypePrimaryLabel.layer.cornerRadius = 5
@@ -28,7 +28,7 @@ class CellSetupController: UITableViewCell {
         pokemonTypePrimaryLabel.layer.masksToBounds = true
         pokemonTypeSecondaryLabel.layer.masksToBounds = true
         
-        pokemonImageView.image = UIImage(named: String(format: "%03d", index.row + 1))
+        pokemonImageView.image = UIImage(named: String(format: "%03d", pokemon.id))
         pokemonNameLabel.text = pokemon.name.english
         
         pokemonTypePrimaryLabel.text = pokemon.type[0]
