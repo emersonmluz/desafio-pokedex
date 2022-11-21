@@ -17,6 +17,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        TopView.backgroundColor = UIColor(named: pokemon?.type[0].lowercased() ?? "white")
     }
 
 }
