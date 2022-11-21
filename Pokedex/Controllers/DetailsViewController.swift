@@ -24,6 +24,9 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
     
         topView.backgroundColor = UIColor(named: pokemon?.type[0].lowercased() ?? "white")
+        view.backgroundColor = UIColor(named: pokemon?.type[0].lowercased() ?? "white")
+        
+        bottonView.layer.cornerRadius = 20
         
         pokemonTypePrimaryLabel.layer.cornerRadius = 5
         pokemonTypeSecondaryLabel.layer.cornerRadius = 5
