@@ -7,7 +7,7 @@
 
 import Foundation
 
-class JsonFileRead {
+class JsonFile {
     static func read () -> [Pokemon] {
         var result: [Pokemon] = []
         

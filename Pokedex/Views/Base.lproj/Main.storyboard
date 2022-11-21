@@ -120,7 +120,6 @@
                                             <outlet property="pokemonNameLabel" destination="fIs-BT-GQu" id="0e9-9u-z5g"/>
                                             <outlet property="pokemonTypePrimaryLabel" destination="MAP-tm-WPO" id="UH7-ex-xeF"/>
                                             <outlet property="pokemonTypeSecondaryLabel" destination="0os-BU-4hd" id="XkE-Fr-Eka"/>
-                                            <segue destination="OWr-1u-ya0" kind="show" id="H5c-eY-bWo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -153,10 +152,35 @@
                     <view key="view" contentMode="scaleToFill" id="wh4-pH-NeE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lke-rP-KPW" userLabel="HalfSepareteStackView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-5S-MXh" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NM0-Sg-KjP" userLabel="BottonView">
+                                        <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aZv-CT-WqW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aZv-CT-WqW" firstAttribute="bottom" secondItem="Lke-rP-KPW" secondAttribute="bottom" id="H27-ap-ukt"/>
+                            <constraint firstItem="aZv-CT-WqW" firstAttribute="trailing" secondItem="Lke-rP-KPW" secondAttribute="trailing" id="HHT-nh-R8v"/>
+                            <constraint firstItem="Lke-rP-KPW" firstAttribute="leading" secondItem="aZv-CT-WqW" secondAttribute="leading" id="P1j-CZ-Lag"/>
+                            <constraint firstItem="Lke-rP-KPW" firstAttribute="top" secondItem="aZv-CT-WqW" secondAttribute="top" id="wJi-QC-Cht"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V3Y-z7-5hC"/>
+                    <connections>
+                        <outlet property="BottonView" destination="NM0-Sg-KjP" id="TbZ-7k-dOZ"/>
+                        <outlet property="TopView" destination="DE6-5S-MXh" id="LNO-F9-6rn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE3-zS-vnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

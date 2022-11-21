@@ -8,10 +8,15 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    
+    @IBOutlet weak var TopView: UIView!
+    @IBOutlet weak var BottonView: UIView!
+    
+    var pokemon: Pokemon?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
     }
 
 }

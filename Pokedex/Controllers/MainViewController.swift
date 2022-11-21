@@ -16,13 +16,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pokedex = JsonFileRead.read()
+        pokedex = JsonFile.read()
         tableView.dataSource = self
         tableView.delegate = self
         
         // Do any additional setup after loading the view.
     }
-    
 }
 
 extension MainViewController: UITableViewDataSource {
@@ -42,5 +41,11 @@ extension MainViewController: UITableViewDataSource {
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let detailsScreen = storyboard!.instantiateViewController(withIdentifier: "DetailsView") as! DetailsViewController
+        
+        detailsScreen.pokemon = pokedex[indexPath.row]
+        
+        self.navigationController!.pushViewController(detailsScreen, animated: true)
     }
 }
