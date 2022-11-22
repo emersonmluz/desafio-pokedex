@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         
         pokedex = JsonFile.read()
         soundTheme = AudioFile.importAudioFile()
+        soundTheme?.numberOfLoops = -1
         soundTheme?.play()
         
         tableView.dataSource = self
