@@ -51,6 +51,8 @@ class DetailsViewController: UIViewController {
         statusValues[1].text = String(pokemon?.base.attack ?? 0)
         statusValues[2].text = String(pokemon?.base.defense ?? 0)
         statusValues[3].text = String(pokemon?.base.speed ?? 0)
+        statusValues[4].text = String(pokemon?.base.spAttack ?? 0)
+        statusValues[5].text = String(pokemon?.base.spDefense ?? 0)
     }
 
 }
