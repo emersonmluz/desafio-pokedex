@@ -6,17 +6,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     var pokedex: [Pokemon] = []
+    var soundTheme: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pokedex = JsonFile.read()
+        soundTheme = AudioFile.importAudioFile()
+        soundTheme?.play()
+        
         tableView.dataSource = self
         tableView.delegate = self
         

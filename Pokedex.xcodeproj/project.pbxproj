@@ -21,6 +21,8 @@
 		EE4588AE2928004C006218E1 /* JsonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588AD2928004C006218E1 /* JsonFile.swift */; };
 		EE4588B029280701006218E1 /* CellSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588AF29280701006218E1 /* CellSetupController.swift */; };
 		EE4588B8292A7701006218E1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4588B7292A7701006218E1 /* DetailsViewController.swift */; };
+		EEB43026292C5C3300FCE9F6 /* pokemonTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEB43025292C5C3300FCE9F6 /* pokemonTheme.mp3 */; };
+		EEB43029292C5C9100FCE9F6 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB43028292C5C9100FCE9F6 /* AudioFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		EE4588AD2928004C006218E1 /* JsonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFile.swift; sourceTree = "<group>"; };
 		EE4588AF29280701006218E1 /* CellSetupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupController.swift; sourceTree = "<group>"; };
 		EE4588B7292A7701006218E1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EEB43025292C5C3300FCE9F6 /* pokemonTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pokemonTheme.mp3; sourceTree = "<group>"; };
+		EEB43028292C5C9100FCE9F6 /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				EE4588A22927EBDB006218E1 /* Views */,
 				EE4588A32927EBEB006218E1 /* Controllers */,
 				C1F4DDC82927CD2D009B263A /* Data */,
+				EEB43027292C5C4200FCE9F6 /* Sounds */,
 				C1F4DDB42927CCDA009B263A /* AppDelegate.swift */,
 				C1F4DDB62927CCDA009B263A /* SceneDelegate.swift */,
 				C1F4DDBD2927CCDB009B263A /* Assets.xcassets */,
@@ -101,6 +106,7 @@
 				EE4588A82927EDA9006218E1 /* NameInLanguages.swift */,
 				EE4588AA2927EFA2006218E1 /* Base.swift */,
 				EE4588AD2928004C006218E1 /* JsonFile.swift */,
+				EEB43028292C5C9100FCE9F6 /* AudioFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +127,14 @@
 				EE4588B7292A7701006218E1 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEB43027292C5C4200FCE9F6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EEB43025292C5C3300FCE9F6 /* pokemonTheme.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,7 @@
 				C1F4DDCC2927CD56009B263A /* README.md in Resources */,
 				C1F4DDBE2927CCDC009B263A /* Assets.xcassets in Resources */,
 				C1F4DDBC2927CCDA009B263A /* Main.storyboard in Resources */,
+				EEB43026292C5C3300FCE9F6 /* pokemonTheme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +215,7 @@
 				EE4588AE2928004C006218E1 /* JsonFile.swift in Sources */,
 				EE4588B8292A7701006218E1 /* DetailsViewController.swift in Sources */,
 				EE4588A92927EDA9006218E1 /* NameInLanguages.swift in Sources */,
+				EEB43029292C5C9100FCE9F6 /* AudioFile.swift in Sources */,
 				EE4588B029280701006218E1 /* CellSetupController.swift in Sources */,
 				C1F4DDB92927CCDA009B263A /* MainViewController.swift in Sources */,
 				C1F4DDB52927CCDA009B263A /* AppDelegate.swift in Sources */,
@@ -351,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8Z4UQ838F7;
+				DEVELOPMENT_TEAM = 7Q2JD863XR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -379,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8Z4UQ838F7;
+				DEVELOPMENT_TEAM = 7Q2JD863XR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
