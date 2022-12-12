@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,31 +20,41 @@ class MainViewController: UIViewController {
         
         pokedex = JsonFile.read()
         soundTheme = AudioFile.importAudioFile()
-        soundTheme?.numberOfLoops = -1
-        soundTheme?.play()
+//        soundTheme?.numberOfLoops = -1
+//        soundTheme?.play()
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        setupPokemonTableView()
+//        tableView.dataSource = self
+//        tableView.delegate = self
+        
         
         // Do any additional setup after loading the view.
     }
+    
+    func setupPokemonTableView() {
+        tableView.register(UINib(nibName: "PokemonTableViewCell", bundle: nil), forCellReuseIdentifier: "pokemonCell")
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
 }
 
-extension MainViewController: UITableViewDataSource {
+
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pokedex.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellSetupController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "pokemonCell") as! PokemonTableViewCell
         
-        cell.importPokemonBase(pokemonBase: pokedex[indexPath.row])
+        cell.setPokemons(pokemonList: pokedex, index: indexPath.row)
         
         return cell
     }
 }
 
-extension MainViewController: UITableViewDelegate {
+extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

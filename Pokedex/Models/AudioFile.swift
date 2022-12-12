@@ -21,8 +21,4 @@ class AudioFile {
         return audioFileResult!
     }
     
-//    let addNotesPath = Bundle.main.path(forResource: "noteEffect", ofType: "wav")
-//    let deleteNotesPath = Bundle.main.path(forResource: "deleteEffect", ofType: "wav")
-//
-//    try effectAddNotes = AVAudioPlayer(contentsOf: URL(fileURLWithPath: addNotesPath!))
 }
